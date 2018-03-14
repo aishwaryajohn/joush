@@ -1,0 +1,21 @@
+import matplotlib.pyplot as plt
+ 
+# defining labels
+activities = ['football', 'basketball', 'cricket', 'throwball']
+ 
+# portion covered by each label
+slices = [4, 5, 7, 6]
+ 
+# color for each label
+colors = ['red', 'blue', 'green', 'pink']
+ 
+# plotting the pie chart
+plt.pie(slices, labels = activities, colors=colors, 
+        startangle=90, shadow = True, explode = (0, 0, 0.1, 0),
+        radius = 1.2, autopct = '%1.1f%%')
+ 
+# plotting legend
+plt.legend()
+ 
+# showing the plot
+plt.show()
